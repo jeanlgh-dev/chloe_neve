@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J'ai faim 💖</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:linear-gradient(-45deg,#ffd1dc,#ffc2d1,#ffe5ec,#ffd6ff);
+    background-size:400% 400%;
+    animation:gradient 12s ease infinite;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.bg-blur{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+}
+
+.blur1{
+    width:400px;
+    height:400px;
+    background:#ff69b4;
+    top:-100px;
+    left:-100px;
+    opacity:.35;
+}
+
+.blur2{
+    width:500px;
+    height:500px;
+    background:white;
+    right:-150px;
+    bottom:-150px;
+    opacity:.3;
+}
+
+.card{
+    width:min(90%,800px);
+    padding:80px 40px;
+    text-align:center;
+
+    background:rgba(255,255,255,0.22);
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:40px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.badge{
+    display:inline-block;
+    padding:12px 22px;
+    border-radius:999px;
+    background:rgba(255,255,255,.4);
+    color:#ff4d94;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+h1{
+    font-size:clamp(4rem,11vw,8rem);
+    color:white;
+    line-height:1;
+    text-shadow:0 10px 25px rgba(0,0,0,.08);
+    animation:float 4s ease-in-out infinite;
+}
+
+p{
+    color:white;
+    font-size:1.2rem;
+    margin-top:20px;
+    opacity:.9;
+}
+
+button{
+    margin-top:40px;
+    border:none;
+    cursor:pointer;
+
+    padding:18px 36px;
+    border-radius:999px;
+
+    background:linear-gradient(135deg,#ff5fa2,#ff89c4);
+
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+
+    transition:.35s;
+}
+
+button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 40px rgba(255,95,162,.4);
+}
+
+.emoji{
+    position:absolute;
+    font-size:2.2rem;
+    opacity:.8;
+    animation:float 5s ease-in-out infinite;
+}
+
+.e1{top:10%;left:12%;}
+.e2{top:15%;right:15%;animation-delay:1s;}
+.e3{bottom:18%;left:18%;animation-delay:2s;}
+.e4{bottom:15%;right:12%;animation-delay:3s;}
+.e5{top:35%;left:8%;animation-delay:4s;}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-20px);}
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg-blur blur1"></div>
+<div class="bg-blur blur2"></div>
+
+<div class="emoji e1">🍓</div>
+<div class="emoji e2">🧁</div>
+<div class="emoji e3">🍰</div>
+<div class="emoji e4">🍒</div>
+<div class="emoji e5">💖</div>
+
+<div class="card">
+    <div class="badge">✨ Gourmande du jour</div>
+
+    <h1>J'ai faim</h1>
+
+    <p>
+        Une irrésistible envie de douceur, de sucre et de bonheur.
+    </p>
+
+    <button>🍰 Trouver un dessert</button>
+</div>
+
+</
